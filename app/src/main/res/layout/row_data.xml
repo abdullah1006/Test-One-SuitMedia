@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_item_photo"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="1dp"
+        android:scaleType="centerCrop"
+        tools:src="@tools:sample/avatars" />
+    <TextView
+        android:id="@+id/tv_namaGuest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/image"
+        android:text="Nama Guest"
+        android:layout_marginTop="15dp"
+        />
+    <TextView
+        android:id="@+id/tv_birthdateGuest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_namaGuest"
+        android:text="Tanggal Lahir"
+        android:layout_marginTop="5dp"/>
+</LinearLayout>
