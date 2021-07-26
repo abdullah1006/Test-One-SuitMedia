@@ -26,7 +26,7 @@ public class EventData {
             R.drawable.kali_linux
     };
 
-    static ArrayList<EventModel> getListData() {
+    public static ArrayList<EventModel> getListData() {
         ArrayList<EventModel> list = new ArrayList<>();
         for (int position = 0; position < eventNames.length; position++) {
             EventModel event = new EventModel();
