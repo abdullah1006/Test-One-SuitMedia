@@ -29,6 +29,7 @@ public class ScreenGuest extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen_guest);
+        setActionBarTitle("Guest");
 
         //Initialize
         rvGuest = findViewById(R.id.rv_guest);
@@ -120,6 +121,12 @@ public class ScreenGuest extends AppCompatActivity {
             Toast.makeText(this, "IOS", Toast.LENGTH_SHORT).show();
         }else{
             Toast.makeText(this, "feature phone", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private void setActionBarTitle(String title) {
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle(title);
         }
     }
 

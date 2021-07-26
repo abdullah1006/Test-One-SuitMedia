@@ -22,6 +22,7 @@ public class ScreenEvent extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen_event);
+        setActionBarTitle("Event");
         rvEvents = findViewById(R.id.rv_event);
         rvEvents.setHasFixedSize(true);
 
@@ -45,5 +46,10 @@ public class ScreenEvent extends AppCompatActivity {
                 finish();
             }
         });
+    }
+    private void setActionBarTitle(String title) {
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle(title);
+        }
     }
 }
